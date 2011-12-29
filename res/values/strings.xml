@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, OmnomIRCActivity!</string>
+    <string name="app_name">OmnomIRC Mobile</string>
+    <string name="send">Send</string>
+
+</resources>

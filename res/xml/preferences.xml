@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Login Information">
+    	<EditTextPreference android:summary="Your Omnimaga username" android:dialogTitle="Username" android:dialogMessage="Type in your Omnimaga username:" android:title="Username" android:key="username"/>
+    	<EditTextPreference android:summary="Your Omnimaga password" android:dialogTitle="Password" android:dialogMessage="Type in your Omnimaga password:" android:title="Password" android:key="password" android:password="true"/>
+	</PreferenceCategory>
+    <PreferenceCategory android:title="IRC Preferences">
+        <EditTextPreference android:key="scrollback" android:defaultValue="50" android:summary="How many lines we show at startup" android:dialogMessage="Lines of scrollback at startup:" android:dialogTitle="Scrollback" android:title="Lines of scrollback"/>
+        <EditTextPreference android:key="channel" android:dialogTitle="Channel" android:dialogMessage="Channel to join at startup:" android:title="Channel" android:defaultValue="#omnimaga" android:summary="Channel to join at startup"/>
+    </PreferenceCategory>
+</PreferenceScreen>
