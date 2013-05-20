@@ -39,6 +39,7 @@ public class OmnomIRCActivity extends Activity {
 	
 	String signature;
 	String username = "Guest";
+	String omnimagaId;
 	String channel;
 	String curLine;
 	Boolean connected = false;
@@ -159,9 +160,11 @@ public class OmnomIRCActivity extends Activity {
 
             signature = page.split("\n")[0];
             username = page.split("\n")[1];
+            omnimagaId = page.split("\n")[2];
             
             Log.d("OmnomAuth", "Signature: "+signature+"\n");
             Log.d("OmnomAuth", "Username: "+username+"\n");
+            Log.d("OmnomAuth", "Id: "+omnimagaId+"\n");
 
         } catch (Exception e) {
 			Log.e("OmnomAuth", e.getMessage());
@@ -315,7 +318,7 @@ public class OmnomIRCActivity extends Activity {
 	    		text.append("[" + DateFormat.getTimeInstance(DateFormat.MEDIUM).format(time) + "] ");
 	    	if(type.equals("pm"))
 	    	{
-	    		text.append("[PM]Ê");
+	    		text.append("[PM]ï¿½");
 	    		//TODO: got ping'd, do something
 	    	}
 	    	if(type.equals("message") || type.equals("pm"))
